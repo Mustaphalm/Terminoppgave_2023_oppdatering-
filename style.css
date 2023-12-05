@@ -1,0 +1,518 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  background-color: rgb(179, 173, 173);
+}
+
+
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    background-color: transparent; /* Gold header background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #83756f; /* Oransje tekst farge */
+}
+
+ .h2-1 {
+margin-bottom: 15px;
+}
+
+.h2-2 {
+  margin-top: 30px;
+}
+
+.h2-3 {
+  margin-bottom: 3%;
+}
+
+
+
+.p-1 {
+    font-size: 1.5rem;
+    margin: 7;
+    color: #0b0707;
+}
+
+.play-button {
+    background-color: #FF4500; /* Oransje button bakgrunn */
+    color: rgb(151, 75, 75);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Reduser margin-top-verdien for å flytte knappen ned */
+}
+
+
+
+.play-button:hover {
+    background-color: #FF6347; /* Light Coral på hover */
+}
+
+/* Styling for form buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* for menyknapper i menyen min */
+nav ul {
+  display: flex;
+  align-items: center; /* Sentrerer knappene vertikalt */
+  justify-content: space-between; /* Sentrerer knappene horisontalt */
+  list-style: none;
+  padding: 0;
+
+}
+
+nav ul li {
+  margin: 0 20px; /* Legger en jevn margin mellom knappene */
+  text-align: center; /* Sørger for at teksten er sentrert horisontalt */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fdfdfd;
+  font-weight: bold;
+  font-size: 17px;
+  font-style: italic;
+  padding: 10px 20px; /* Legg til litt padding for å gjøre knappene mer klikkbare */
+  border: 2px solid transparent; /* Legg til en transparent ramme */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Legg til overgangseffekter for fargeendring */
+}
+
+nav ul li a:hover {
+  background-color: #ff4747; /* Legg til ønsket bakgrunnsfarge på hover */
+  color: #ffffff; /* Endre teksten til hvit på hover */
+  border-color: #FF6347; /* Endre rammens farge på hover */
+}
+/* her slutter css for navbar knapper */
+
+
+
+
+         /* css for logg inn fuksjonen min*/
+
+/* Styling for login form */
+.login-form {
+  display: flex; /* Add this line to enable Flexbox */
+  flex-direction: column;
+  align-items: center; /* Center horizontally and vertically */
+  justify-content: center;
+  max-width: 500px;
+  margin: 50px auto; /* Center horizontally */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Styling for login container */
+.login-container {
+  display: flex; /* Add this line to enable Flexbox */
+  flex-direction: column;
+  align-items: center; /* Center horizontally and vertically */
+  justify-content: center;
+  max-width: 500px;
+  margin: 50px auto; /* Center horizontally */
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+  /*Her slutter logg inn */
+  
+
+
+    /*Her starter Faq siden */
+
+    .faq-heading {
+        /* Redusert margin-top-verdi */
+        margin-bottom: 1%; /* Redusert margin-bottom-verdi */
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px; /* Redusert fontstørrelse */
+        padding-bottom: 2px;
+    }
+    
+    .faq-card {
+        border: 1px solid #dce0e8;
+        border-radius: 10px;
+        padding: 15px; 
+        margin-bottom: 15px; 
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+        justify-content: space-between;
+        
+    }
+    
+    .faq-open-icon {
+        font-size: 18px; /* Redusert fontstørrelse */
+        position: absolute;
+        top: 14px; /* Redusert top-verdi */
+        right: 16px; /* Redusert right-verdi */
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    details[open] .faq-open-icon {
+        top: 14px; /* Redusert top-verdi */
+        right: 16px; /* Redusert right-verdi */
+    }
+    
+    details > summary {
+        list-style: none;
+    }
+    
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+    
+    details[open] summary {
+        color: #ffffff;
+        font-weight: 500;
+    }
+    
+    details[open] .faq-card-spoiler {
+        display: inline-block;
+        padding-top: 6px; /* Redusert padding-verdi */
+        color: #000000;
+    }
+    
+    .faq-aftertext {
+        text-align: center;
+        color: #0b0b0b;
+        margin-top: 30px;
+    }
+
+/* Her slutter css for faq siden min */
+
+
+
+
+/* Her starter css for flappy goat spill */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+	height: 100vh;
+	width: 100vw;
+	background: url('Bilder/Flappy_bird_background_image.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bird {
+	height: 100px;
+	width: 130px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+}
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	background:radial-gradient(lightgreen 50%, green);
+	border: 5px solid black;
+}
+.message {
+  position: absolute;
+  z-index: 10;
+  color: black;
+  top: 30%;
+  left: 50%;
+  margin-top: 18%;
+  font-size: 2em; /* Adjust the font size as needed */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.messageStyle{
+	background: white;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 5%;
+  margin-bottom: 30px;
+}
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	color: white;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.score_val {
+	color: gold;
+	font-weight: bold;
+}
+@media only screen and (max-width: 1080px) {
+    .message{
+		font-size: 50px;
+		top: 50%;
+		white-space: nowrap;
+	}
+	.score{
+		font-size: 8vh;
+	}
+	.bird{
+		width: 120px;
+		height: 90px;
+	}
+	.pipe_sprite{
+		width: 14vw;
+	}
+}
+/* Her slutter css for flappy goat siden */
+
+
+
+/* Her starter css for footer */
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #636974;
+  min-height: 10px; /* Adjusted min-height */
+  padding:  15px; /* Adjusted padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1; /* Adjusted z-index */
+  margin-top: 10px;
+  
+}
+
+.footer-text {
+  margin-right: -20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom {
+  position: relative;
+}
+
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.social-icon__link ion-icon {
+  font-size: 2em;
+  color: #fff;
+}
+
+/* her slutter css for footer */
+
+
+
+
+
+/* Styling for registration container */
+.registration-container {
+  display: flex; /* Add this line to enable Flexbox */
+  flex-direction: column;
+  align-items: center; /* Center horizontally and vertically */
+  justify-content: center;
+  max-width: 500px;
+  margin: 50px auto; /* Center horizontally */
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+/* Styling for registration form */
+.registration-form {
+  display: flex; /* Add this line to enable Flexbox */
+  flex-direction: column;
+  align-items: center; /* Center horizontally and vertically */
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto; /* Center horizontally */
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+
+/* Styling for forms */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin-right: 3%;
+}
+
+/* Styling for form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styling for form inputs */
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
+
+/*  ønsket styling for menyen */
+
+.nav-menu {
+  display: none;
+  /* Legg til annen styling som du ønsker */
+}
+
+.menu-icon {
+  cursor: pointer;
+  /* Legg til annen styling som du ønsker */
+}
+
+
+
+
+
+
+/* Her starter css for leaderboard */
+
+.leaderboard {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ddd; /* Change this to your preferred text color */
+}
+
+.contact-info a {
+  color: #fff; /* Change this to your preferred link color */
+  text-decoration: none;
+}
+
+/* ulike style for hover */
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Her slutter css for leaderboard */

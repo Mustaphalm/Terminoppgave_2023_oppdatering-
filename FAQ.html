@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Lenke til ekstern stilark -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Angi visningsporten for responsiv design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Angi tittelen på nettsiden -->
+    <title>FAQ</title>
+</head>
+<body>
+    <!-- Logo-container -->
+    <div class="Logo"></div>
+
+    <!-- Header-seksjon -->
+    <header>
+        <!-- Menyikon for mobile enheter, med funksjonskall til toggleMenu() -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <!-- Navigasjonsmeny -->
+        <nav class="nav-menu">
+            <ul>
+                <!-- Lenke til logo -->
+                <a id="ulv-logo" href="Index.html"><img src="Logo/Ulv_logo.png" alt="min Logo" height="70" width="70"></a>
+                <!-- Navigasjonslenker -->
+                <li><a href="Leaderboard.php">Leaderboard</a></li>
+                <li><a href="Logg_inn.php">Logg inn</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Registrer_deg.php">Registrer deg</a></li>
+                <li><a href="Flappy_wolf.html">Flappy wolf</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hovedinnhold -->
+    <main>
+        <div class="container">
+            <!-- Overskrift for ofte stilte spørsmål -->
+            <h2 class="h2-1">Ofte stilte spørsmål</h2>
+    
+            <!-- Detaljer for hvert spørsmål -->
+            <details class="faq-card">
+                <summary>Hvordan fungerer spillet? <span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Spillet starter ved å trykke på "Enter", og du bruker "Space" for å manøvrere gjennom hindringer. Du får poeng for hvert passert hinder.</span>
+            </details>
+        
+            <details class="faq-card">
+                <summary>Hva er målet med spillet? <span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Målet med spillet er å oppnå høyest mulig poengsum og dermed få en høy score.</span>
+            </details>
+        
+            <details class="faq-card">
+                <summary>Kan jeg bruke tastaturet eller en kontroller for å spille? <span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Du kan spille både med tastaturet og en kontroller, begge fungerer normalt.</span>
+            </details>
+        
+            <details class="faq-card">
+                <summary>Hvorfor krasjer jeg så ofte i spillet? <span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Du krasjer når du treffer hindringene. Det krever god konsentrasjon og oppmerksomhet for å unngå kollisjoner.</span>
+            </details>
+        
+            <details class="faq-card">
+                <summary>Er det en begrensning på hvor høyt jeg kan komme? <span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Du kan nå betydelige høyder ved å trykke på "Space", men det stopper etter en viss høyde og starter deretter på nytt.</span>
+            </details>
+      
+            <!-- Ekstra informasjon etter FAQ  -->
+            <h2 class="h2-2">Har du fortsatt spørsmål?</h2>
+            <a href="Dokumentasjon/IT_lærling/Opplærringsmateriale_It_lærling.pdf">Lurer du på hvordan man kobler seg til database? Klikk her for mer informasjon.</a>
+            <p class="faq-aftertext">Hvis du ikke finner svar på spørsmålet ditt i vår FAQ, kan du alltid kontakte oss. Vi vil svare så raskt som mulig!<br></p>
+        </div>
+    </main>
+
+    <!-- Footer-seksjon -->
+    <footer class="footer">
+        <!-- Sosiale medie-ikoner -->
+        <ul class="social-icon">
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="https://www.facebook.com/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="https://twitter.com/">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="https://www.linkedin.com/in/mustapha-lmesbahy-4a9575225//">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Skript for å laste inn Ionicons (ikke-modulært og modulært) -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Egendefinert meny-skript -->
+    <script src="menu.js"></script> 
+</body>
+</html>
