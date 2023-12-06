@@ -22,9 +22,8 @@ try {
     mysqli_close($connection);
 
     echo "Poengsum oppdatert!";
-} catch (PDOException $e) {
-    echo "Feil: " . $e->getMessage();
 }
+    echo "Feil: " . $e->getMessage();
 
 // Hvis du har en annen del av koden etter dette punktet, legg den til her
 // ...

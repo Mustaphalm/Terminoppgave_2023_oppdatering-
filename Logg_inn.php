@@ -106,30 +106,36 @@
     </main>
 
                    
-        <!-- footer starter her -->
-        
-        <footer class="footer">
-     
-      <ul class="social-icon">
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="https://www.facebook.com/">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="https://twitter.com/">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-        <li class="social-icon__item">
-          <a class="social-icon__link" href="https://www.linkedin.com/in/mustapha-lmesbahy-4a9575225//">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-      </ul>
 
-    </footer>
-
+   <!-- Footer-seksjon -->
+   <footer class="footer3">
+    <div class="footer-content">
+        <div class="contact-info">
+            <p>Kontakt oss: +47 455 456 789 | info@Flappy wolf.com</p>
+        </div>
+        <div class="quick-links">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="Leaderboard.php">Leaderboard</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <!-- Legg til flere lenker etter behov -->
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="https://nb-no.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.linkedin.com/in/mustapha-lmesbahy-4a9575225/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <!-- Legg til flere sosiale medie-lenker etter behov -->
+        </div>
+        <div class="it-apprentice-guide">
+            <a href="Dokumentasjon/IT_lærling/Opplærringsmateriale_It_lærling.pdf" target="_blank" rel="noopener noreferrer">Brukerveiledning for IT-lærling.</a>
+            <a href="Dokumentasjon/Sluttbruker/Opplæringsmateriale_for_sluttbruker.pdf" target="_blank" rel="noopener noreferrer"> Brukerveiledning for Sluttbruker.</a>
+          </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 Eksempelnettsted. Alle rettigheter reservert.</p>
+    </div>
+</footer>
 
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
