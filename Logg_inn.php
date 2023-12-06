@@ -24,7 +24,6 @@
                 <li><a href="Logg_inn.php">Logg inn</a></li>
                 <li><a href="FAQ.html">FAQ</a></li>
                 <li><a href="Registrer_deg.php">Registrer deg</a></li>
-                <li><a href="Flappy_wolf.html">Flappy wolf</a></li>
             </ul>
         </nav>
     </header>
@@ -94,7 +93,7 @@
                                 $_SESSION['brukernavn'] = $row['username'];
                                 $_SESSION['id'] = $row['id'];
                                 // Utgive en suksessmelding
-                                echo "<p class='success-message'>Du har nå logget inn. <a href='flappy_wolf.html'>Trykk på linken for å spille</a></p>";
+                                echo "<p class='success-message'>Du har nå logget inn. <a href='flappy_wolf.html'>Trykk her for å starte spillet</a></p>";
                             } else {
                                 // Utgive en feilmelding hvis brukeren ikke ble funnet
                                 echo "<p class='error-message'>Feil brukernavn eller passord!</p>";

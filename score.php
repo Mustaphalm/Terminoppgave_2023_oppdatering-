@@ -11,18 +11,21 @@ $user = "root";
 $pw = "Admin";
 $db_name = "terminoppgave";
 
-include ("db.connect.php")
+include("db.connect.php");
 
-
+try {
     // Oppdater poengsummen i databasen
-    $sql = "INSERT INTO poengsum (spiller_id, score) VALUES  ('$spiller_id', '$ny_poengsum')
+    $sql = "INSERT INTO poengsum (spiller_id, score) VALUES ('$spiller_id', '$ny_poengsum');";
+    mysqli_query($connection, $sql);
 
-     Lukk databasetilkoblingen
-    $db = null;
+    // Lukk databasetilkoblingen
+    mysqli_close($connection);
 
     echo "Poengsum oppdatert!";
- catch (PDOException $e) {
+} catch (PDOException $e) {
     echo "Feil: " . $e->getMessage();
 }
-?>
 
+// Hvis du har en annen del av koden etter dette punktet, legg den til her
+// ...
+?>
