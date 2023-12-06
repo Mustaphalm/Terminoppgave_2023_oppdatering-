@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: transparent; /* Gold header background */
+    background-color: transparent; 
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -26,7 +26,7 @@ header {
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
-    color: #83756f; /* Oransje tekst farge */
+    color: #3b62d4; 
 }
 
  .h2-1 {
@@ -49,27 +49,23 @@ margin-bottom: 15px;
     color: #0b0707;
 }
 
+/* Play button styling */
 .play-button {
-    background-color: #FF4500; /* Oransje button bakgrunn */
-    color: rgb(151, 75, 75);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px; /* Reduser margin-top-verdien for å flytte knappen ned */
+  background-color: #9ab2e6; /* Blå bakgrunn */
+  color: #f2f2f2; /* Lysegrå tekstfarge */
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Reduser margin-top-verdien for å flytte knappen ned */
 }
 
-
-
 .play-button:hover {
-    background-color: #FF6347; /* Light Coral på hover */
+  background-color: #FF6347; /* Light Coral på hover */
 }
 
 /* Styling for form buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #4CAF50; /* Grønn bakgrunn */
   color: white;
   padding: 12px;
   border: none;

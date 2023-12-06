@@ -50,7 +50,9 @@
                 <label for="passord">Passord:</label>
                 <input type="password" id="passord" name="passord" placeholder="Velg et passord" required><br/>
 
-                <button type="submit">Registrer</button><br/>
+                <button type="submit">Registrer deg</button><br/>
+
+                <a href="Logg_inn.php">Har du allerede en konto? Logg inn her</a>
 
 
                 
