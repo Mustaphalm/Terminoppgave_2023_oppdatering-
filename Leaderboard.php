@@ -14,7 +14,7 @@
     <nav>
         <ul>
             <!-- Logo og navigasjonslenker -->
-            <a id="ulv-logo" href="Index.html"><img src="Logo/Ulv_logo.png" alt=" min Logo" height="70" width="70"></a>
+            <a id="ulv-logo" href="index.html"><img src="Logo/Ulv_logo.png" alt=" min Logo" height="70" width="70"></a>
             <li><a href="Leaderboard.php">Leaderboard</a></li>
             <li><a href="Logg_inn.php">Logg inn</a></li>
             <li><a href="FAQ.html">FAQ</a></li>

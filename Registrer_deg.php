@@ -18,7 +18,7 @@
         </div>
         <nav class="nav-menu">
             <ul>
-                <a id="ulv-logo" href="Index.html">
+                <a id="ulv-logo" href="index.html">
                     <img src="Logo/Ulv_logo.png" alt=" min Logo" height="70" width="70">
                 </a>
                 <li><a href="Leaderboard.php">Leaderboard</a></li>
