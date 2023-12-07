@@ -318,7 +318,7 @@ details[open] .faq-card-spoiler {
 }
 
 .it-apprentice-guide a {
-  color: #000000; /* Velg ønsket farge for lenken */
+  color: #ffffff; /* Velg ønsket farge for lenken */
   text-decoration: none;
   font-weight: bold;
   display: block; /* Sett lenkene til å vises som blokker, slik at de plasseres under hverandre */
