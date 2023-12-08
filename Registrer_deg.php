@@ -58,7 +58,7 @@
                 
                 <?php
 // Inkluderer databasekoblingen
-require __DIR__ . 'db.connect.php'; // Juster stien ved behov
+require 'db.connect.php'; // Juster stien ved behov
 
 // Håndterer registreringslogikk når skjemaet sendes
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

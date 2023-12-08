@@ -57,7 +57,7 @@
                     session_start();
                     // Inkludere koblingen til databasen
                     include "db.connect.php";
-
+    
                     // Sjekke om skjemaet er sendt
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         // Funksjon for å validere skjemadata
