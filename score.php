@@ -14,7 +14,7 @@ $db_name = "terminoppgave";
 include("db.connect.php");
 
 try {
-    // Oppdater poengsummen i databasen
+    // Oppdaterer poengsummen i databasen
     $sql = "INSERT INTO poengsum (spiller_id, score) VALUES ('$spiller_id', '$ny_poengsum');";
     mysqli_query($connection, $sql);
 
@@ -25,6 +25,4 @@ try {
 }
     echo "Feil: " . $e->getMessage();
 
-// Hvis du har en annen del av koden etter dette punktet, legg den til her
-// ...
 ?>

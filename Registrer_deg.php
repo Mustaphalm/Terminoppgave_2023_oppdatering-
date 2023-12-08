@@ -58,7 +58,7 @@
                 
                 <?php
 // Inkluderer databasekoblingen
-require __DIR__ . '/db.connect.php'; // Juster stien ved behov
+include "db.connect.php"; // Juster stien ved behov
 
 // Håndterer registreringslogikk når skjemaet sendes
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Brukernavnet eksisterer allerede! Prøv et annet.";
     } else {
         
-        // Sett inn en ny bruker i databasen ved hjelp av en forberedt uttalelse
+        // Setter inn en ny bruker i databasen ved hjelp av en forberedt uttalelse
         $insert_user_query = "INSERT INTO users (first_name, last_name, username, password) VALUES (?, ?, ?, ?)";
         $stmt_insert = mysqli_prepare($conn, $insert_user_query);
 
@@ -131,8 +131,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 mysqli_close($conn);
 ?>
 
-
-
 </form>
    </div>
      </main>
@@ -154,7 +152,6 @@ mysqli_close($conn);
             <a href="https://nb-no.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
             <a href="https://www.linkedin.com/in/mustapha-lmesbahy-4a9575225/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <!-- Legger til flere sosiale medie-lenker etter behov -->
         </div>
         <div class="it-apprentice-guide">
             <a href="Dokumentasjon/IT_lærling/Opplærringsmateriale_It_lærling.pdf" target="_blank" rel="noopener noreferrer">Brukerveiledning for IT-lærling.</a>

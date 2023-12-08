@@ -1,4 +1,4 @@
-/* Global styling for hele siden */
+/* styling for hele siden */
 body {
   margin: 0;
   padding: 0;
@@ -24,14 +24,14 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Overskrift 1-styling */
+/* Overskrift h1-styling */
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
     color: #3b62d4; 
 }
 
-/* Egendefinerte overskriftsstiler */
+/* Egennutviklet overskriftsstiler */
 .h2-1 {
   margin-bottom: 15px;
 }
@@ -72,8 +72,8 @@ button {
 /* Styling for knapper i navigasjonsmenyen */
 nav ul {
   display: flex;
-  align-items: center; /* Sentrer knappene vertikalt */
-  justify-content: space-between; /* Sentrer knappene horisontalt */
+  align-items: center; /* Sentrerer knappene vertikalt */
+  justify-content: space-between; /* Sentrerer knappene horisontalt */
   list-style: none;
   padding: 0;
 }
@@ -89,26 +89,27 @@ nav ul li a {
   font-weight: bold;
   font-size: 17px;
   font-style: italic;
-  padding: 10px 20px; /* Legg til litt padding for å gjøre knappene mer klikkbare */
-  border: 2px solid transparent; /* Legg til en transparent ramme */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Legg til overgangseffekter for fargeendring */
+  padding: 10px 20px; /* Legger til litt padding for å gjøre knappene mer klikkbare */
+  border: 2px solid transparent; /* Legger til en transparent ramme */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Legger til overgangseffekter for fargeendring */
 }
 
 nav ul li a:hover {
-  background-color: #ff4747; /* Legg til ønsket bakgrunnsfarge på hover */
-  color: #ffffff; /* Endre teksten til hvit på hover */
-  border-color: #FF6347; /* Endre rammens farge på hover */
+  background-color: #ff4747; /* Legger til ønsket bakgrunnsfarge på hover */
+  color: #ffffff; /* Endrer teksten til hvit på hover */
+  border-color: #FF6347; /* Endrer rammens farge på hover */
 }
 /* her slutter css for navbar knapper */
 
+
 /* Styling for innloggingsformularet */
 .login-form {
-  display: flex; /* Legg til denne linjen for å aktivere Flexbox */
+  display: flex; /* Legger til denne linjen for å aktivere Flexbox */
   flex-direction: column;
-  align-items: center; /* Sentrer horisontalt og vertikalt */
+  align-items: center; /* Sentrerer horisontalt og vertikalt */
   justify-content: center;
   max-width: 500px;
-  margin: 50px auto; /* Sentrer horisontalt */
+  margin: 50px auto; /* Sentrerer horisontalt */
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
@@ -116,17 +117,18 @@ nav ul li a:hover {
 
 /* Styling for innloggingscontaineren */
 .login-container {
-  display: flex; /* Legg til denne linjen for å aktivere Flexbox */
+  display: flex; /* Legger til denne linjen for å aktivere Flexbox */
   flex-direction: column;
-  align-items: center; /* Sentrer horisontalt og vertikalt */
+  align-items: center; /* Sentrerer horisontalt og vertikalt */
   justify-content: center;
   max-width: 500px;
-  margin: 50px auto; /* Sentrer horisontalt */
+  margin: 50px auto; /* Sentrerer horisontalt */
   background-color: #fff;
   padding: 25px;
   border-radius: 8px;
 }
   /*Her slutter logg inn */
+
 
 /* Her starter Faq-siden */
 
@@ -165,17 +167,20 @@ details[open] .faq-open-icon {
     right: 16px; /* Redusert right-verdi */
 }
 
+/* Fjerner punktlisten fra summary-elementer som er av details-elementer */
 details > summary {
     list-style: none;
 }
 
+/* Fjerner standard WebKit-detaljermarkøren (triangelet) */
 details > summary::-webkit-details-marker {
     display: none;
 }
 
+/* Definerer stiler for summary-elementer inni åpne details-elementer */
 details[open] summary {
-    color: #ffffff;
-    font-weight: 500;
+    color: #ffffff;        /* Endrer tekstfargen for åpne details-elementer */
+    font-weight: 500;      /* Endrer skriftvekten for åpne details-elementer */
 }
 
 details[open] .faq-card-spoiler {
@@ -191,6 +196,7 @@ details[open] .faq-card-spoiler {
 }
 
 /* Her slutter css for faq siden min */
+
 
 /* Her starter css for flappy goat spill */
 
@@ -380,17 +386,14 @@ details[open] .faq-card-spoiler {
 /* her slutter css for footer */
 
 
-
-
-
 /* Styling for registreringscontainer */
 .registration-container {
-  display: flex; /* Legg til denne linjen for å aktivere Flexbox */
+  display: flex; /* Legger til denne linjen for å aktivere Flexbox */
   flex-direction: column;
-  align-items: center; /* Sentrer horisontalt og vertikalt */
+  align-items: center; /* Sentrerer horisontalt og vertikalt */
   justify-content: center;
   max-width: 500px;
-  margin: 50px auto; /* Sentrer horisontalt */
+  margin: 50px auto; /* Sentrerer horisontalt */
   background-color: #fff;
   padding: 25px;
   border-radius: 8px;
@@ -398,12 +401,12 @@ details[open] .faq-card-spoiler {
 
 /* Styling for registreringsskjema */
 .registration-form {
-  display: flex; /* Legg til denne linjen for å aktivere Flexbox */
+  display: flex; /* Legger til denne linjen for å aktivere Flexbox */
   flex-direction: column;
   align-items: center; /* Sentrer horisontalt og vertikalt */
   justify-content: center;
   max-width: 500px;
-  margin: 0 auto; /* Sentrer horisontalt */
+  margin: 0 auto; /* Sentrerer horisontalt */
   background-color: #fff;
   padding: 25px;
   border-radius: 8px;
@@ -422,7 +425,7 @@ form {
   margin-right: 3%;
 }
 
-/* Styling for skjemalabeler */
+/* Styling for skjemalabels */
 label {
   display: block;
   margin-bottom: 5px;
@@ -439,23 +442,15 @@ input {
 }
 
 
-
-
-/*  ønsket styling for menyen */
+/* ønsket styling for menyen */
 
 .nav-menu {
   display: none;
-  /* Legg til annen styling som du ønsker */
 }
 
 .menu-icon {
   cursor: pointer;
-  /* Legg til annen styling som du ønsker */
 }
-
-
-
-
 
 
 /* Her starter css for leaderboard */
