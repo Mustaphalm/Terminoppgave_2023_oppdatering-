@@ -1,7 +1,7 @@
 <?php
 $server = "localhost";
 $user = "root";
-$pw = "FeilPassord"; // Gi et feil passord her
+$pw = "Admin";
 $db = "terminoppgave";
 
 // Opprett tilkobling
